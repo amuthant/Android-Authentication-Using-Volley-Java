@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E89C27"
+    tools:context=".Login_activity">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/li"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/a" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/lt"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/c" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/mob"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/editext_bg_gray"
+
+            android:ems="10"
+            android:hint="@string/number"
+            android:inputType="phone" >
+
+            <requestFocus />
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/editext_bg_gray"
+
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword" >
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sgin"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/sign_in"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="@drawable/edit"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/regy"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit1"
+            android:text="@string/sign_up"
+            android:textColor="#07C373"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
